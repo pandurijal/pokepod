@@ -1,0 +1,159 @@
+.App {
+  /* text-align: center; */
+}
+
+.img img {
+  width: 100%;
+}
+
+.search-box {
+  margin: 15px 0;
+}
+
+.search-title {
+  font-family: Maven Pro;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  font-family: Maven Pro;
+  font-size: 18px;
+  padding: 10px 5px;
+  margin: auto;
+}
+
+.paper-pokemon {
+  border-radius: 90px;
+  padding: 30px 60px;
+  margin: 30px auto;
+  width: 75%;
+  position: relative;
+}
+
+.paper-pokemon .title {
+  text-transform: capitalize;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.paper-pokemon .exp {
+  font-family: Oswald;
+  margin: 0;
+  font-size: 22px;
+}
+
+.paper-pokemon .stat {
+  margin: 15px 0;
+}
+
+.paper-pokemon .stat .stat-name {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.paper-pokemon .stat .stat-bar {
+  background-color: #d1d1d1;
+  height: 15px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.paper-pokemon .stat .stat-bar .bar {
+  background-color: #ff1744;
+  height: 15px;
+  border-radius: 15px;
+}
+
+.paper-pokemon .fab-plus {
+  right: 60px;
+  position: absolute;
+}
+
+.slick-list .slick-cloned {
+  display: none;
+}
+
+.slider-box .slider-item {
+  transition-duration: 500ms;
+  padding: 10px 60px;
+  width: 60% !important;
+  background-color: rgba(255, 23, 68, 0.2);
+  position: relative;
+}
+
+.slider-box .slider-item:hover {
+  transition-duration: 500ms;
+  background-color: rgba(255, 23, 68, 1);
+  cursor: pointer;
+}
+
+.slider-box .slider-item:hover .name {
+  transition-duration: 500ms;
+  color: #fff;
+  font-weight: 700;
+}
+
+.slider-box .slider-item:hover .fab-close {
+  display: block;
+  transition-duration: 500ms;
+}
+
+.slider-box .slick-slide {
+  text-align: center;
+}
+
+.slider-box .slider-item .img {
+  text-align: center;
+}
+
+.slider-box .slider-item img {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.slider-box .slider-item .name {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 24px;
+}
+
+.slider-box .slider-item .fab-close {
+  transition-duration: 500ms;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

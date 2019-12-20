@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { routes } from './Routes';
 import { NavBar, Footer } from './Components';
 
@@ -16,7 +16,11 @@ class App extends Component {
       <Router basename="/pokepod/">
         <div className="App">
           <div className="container">
-            <NavBar title="PokePod" />
+            <NavBar title="PokePod">
+              <Link to="/">
+                <p className={`app-menu`}>Home</p>
+              </Link>
+            </NavBar>
             <Switch>
               {routes.map(route => (
                 <Route

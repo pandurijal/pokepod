@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Waypoint } from 'react-waypoint';
 import { pokeListService } from '../Service';
 import { SkeletonList } from '../Components';
 
@@ -7,7 +8,7 @@ class MainPage extends Component {
     super(props);
     this.state = {
       listParams: {
-        limit: 20,
+        limit: 25,
         offset: 0
       },
       pokeList: [],
@@ -35,6 +36,14 @@ class MainPage extends Component {
     this.setState({ isLoading: false, isLoaded: true });
   };
 
+  fetchOnScroll = () => {
+    const { listParams } = this.state;
+    this.setState({
+      listParams: { ...listParams, offset: listParams.offset + 25 }
+    });
+    this.fetchData();
+  };
+
   render() {
     const { listParams, pokeList, isLoading, isLoaded } = this.state;
     return (
@@ -48,7 +57,7 @@ class MainPage extends Component {
                     <div className="grid-item" key={list.name}>
                       <div className="grid-content">
                         <img
-                          // src={`http://www.pokestadium.com/sprites/xy/${list.name}.gif`}
+                          src={`http://www.pokestadium.com/sprites/xy/${list.name}.gif`}
                           alt="img"
                         />
                         <div
@@ -75,6 +84,7 @@ class MainPage extends Component {
             </>
           )}
           {isLoading && <SkeletonList length={listParams.limit} />}
+          {isLoaded && <Waypoint onEnter={this.fetchOnScroll} />}
         </div>
       </div>
     );

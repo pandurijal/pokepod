@@ -112,7 +112,7 @@ body {
 
 .grid-item {
   position: relative;
-  flex-basis: 25%;
+  flex-basis: 20%;
   -ms-flex: auto;
   width: 250px;
   box-sizing: border-box;
@@ -120,7 +120,7 @@ body {
 
 .grid-content {
   position: relative;
-  height: 250px;
+  height: 180px;
   overflow: hidden;
   margin: 10px;
 }
@@ -210,9 +210,9 @@ body {
 
 .grid-item__skeleton {
   background-color: var(--color-gray);
-  height: 250px;
+  height: 180px;
   position: relative;
-  flex-basis: 25%;
+  flex-basis: 20%;
   -ms-flex: auto;
   width: 259px;
   padding: 10px;
@@ -266,10 +266,10 @@ img {
 
 @media (max-width: 1120px) {
   .grid-item {
-    flex-basis: 25%;
+    flex-basis: 20%;
   }
   .grid-item__skeleton {
-    flex-basis: 25%;
+    flex-basis: 20%;
   }
 }
 

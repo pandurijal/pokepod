@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavBar, Footer } from '../Components';
 
 class MainPage extends Component {
   constructor(props) {
@@ -6,7 +7,15 @@ class MainPage extends Component {
     this.state = {};
   }
   render() {
-    return <div>MainPage</div>;
+    return (
+      <div className="App">
+        <NavBar title="PokePod" />
+        MainPage
+        <Footer>
+          <p>PokePod | @pandurijal</p>
+        </Footer>
+      </div>
+    );
   }
 }
 

@@ -1,7 +1,7 @@
 const BASE_URL = 'https://pokeapi.co/api/v2';
 
-export const pokeListService = (query, limit, offset) => {
-  const url = `${BASE_URL}/pokemon`;
+export const pokeListService = (limit, offset) => {
+  const url = `${BASE_URL}/pokemon?limit=${limit}&offset=${offset}`;
   const get = fetch(url, {
     headers: {
       'Content-Type': 'application/json',

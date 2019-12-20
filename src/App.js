@@ -15,20 +15,22 @@ class App extends Component {
     return (
       <Router basename="/pokepod/">
         <div className="App">
-          <NavBar title="PokePod" />
-          <Switch>
-            {routes.map(route => (
-              <Route
-                key={route.path}
-                path={route.path}
-                component={route.component}
-                exact={route.exact}
-              />
-            ))}
-          </Switch>
-          <Footer>
-            <p>PokePod | @pandurijal</p>
-          </Footer>
+          <div className="container">
+            <NavBar title="PokePod" />
+            <Switch>
+              {routes.map(route => (
+                <Route
+                  key={route.path}
+                  path={route.path}
+                  component={route.component}
+                  exact={route.exact}
+                />
+              ))}
+            </Switch>
+            <Footer>
+              <p>PokePod | @pandurijal</p>
+            </Footer>
+          </div>
         </div>
       </Router>
     );

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Waypoint } from 'react-waypoint';
 import { pokeListService } from '../Service';
 import { SkeletonList } from '../Components';
@@ -54,24 +55,26 @@ class MainPage extends Component {
               {pokeList.length > 0 ? (
                 pokeList.map(list => {
                   return (
-                    <div className="grid-item" key={list.name}>
-                      <div className="grid-content">
-                        <img
-                          src={`http://www.pokestadium.com/sprites/xy/${list.name}.gif`}
-                          alt="img"
-                        />
-                        <div
-                          className="fav-btn__wrapper"
-                          // onClick={() => onFavClicked(val.id, srcImg)}
-                        >
-                          <div
-                          // className={`fav-btn ${
-                          //   favorited ? 'favorited' : ''
-                          // }`}
+                    <Link to={`/detail/${list.name}`}>
+                      <div className="grid-item" key={list.name}>
+                        <div className="grid-content">
+                          <img
+                            src={`http://www.pokestadium.com/sprites/xy/${list.name}.gif`}
+                            alt={list.name}
                           />
+                          <div
+                            className="fav-btn__wrapper"
+                            // onClick={() => onFavClicked(val.id, srcImg)}
+                          >
+                            <div
+                            // className={`fav-btn ${
+                            //   favorited ? 'favorited' : ''
+                            // }`}
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   );
                 })
               ) : (

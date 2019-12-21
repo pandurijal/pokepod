@@ -10,3 +10,14 @@ export const pokeListService = (limit, offset) => {
   }).then(res => res.json());
   return get;
 };
+
+export const pokeDetailService = pokeName => {
+  const url = `${BASE_URL}/pokemon/${pokeName}`;
+  const get = fetch(url, {
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json'
+    }
+  }).then(res => res.json());
+  return get;
+};

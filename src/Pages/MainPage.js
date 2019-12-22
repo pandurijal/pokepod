@@ -27,7 +27,6 @@ class MainPage extends Component {
     const { pokeList, listParams } = this.state;
     try {
       const res = await pokeListService(listParams.limit, listParams.offset);
-      console.log({ res });
       this.setState({
         pokeList: [...pokeList, ...res.results]
       });
@@ -55,8 +54,8 @@ class MainPage extends Component {
               {pokeList.length > 0 ? (
                 pokeList.map(list => {
                   return (
-                    <Link to={`/detail/${list.name}`}>
-                      <div className="grid-item" key={list.name}>
+                    <div className="grid-item" key={list.name}>
+                      <Link to={`/pokemon/${list.name}`}>
                         <div className="grid-content">
                           <img
                             src={`http://www.pokestadium.com/sprites/xy/${list.name}.gif`}
@@ -73,8 +72,8 @@ class MainPage extends Component {
                             />
                           </div>
                         </div>
-                      </div>
-                    </Link>
+                      </Link>
+                    </div>
                   );
                 })
               ) : (

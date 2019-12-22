@@ -118,6 +118,14 @@ body {
   box-sizing: border-box;
 }
 
+.grid-item.grid-item-3 {
+  flex-basis: 33.33%;
+}
+
+.grid-item.grid-item-9 {
+  flex-basis: 66.66%;
+}
+
 .grid-content {
   position: relative;
   height: 180px;
@@ -136,6 +144,25 @@ body {
 
 .grid-content:hover {
   border-bottom: solid 1px var(--color-red);
+}
+
+table td {
+  padding: 6px;
+}
+
+.bar__bg {
+  position: relative;
+  border-radius: 8px;
+  height: 10px;
+  width: 100%;
+  background-color: var(--color-gray);
+}
+
+.bar {
+  height: 10px;
+  border-radius: 8px;
+  position: absolute;
+  background-color: var(--color-red);
 }
 
 .fav-btn__wrapper {
@@ -187,25 +214,20 @@ body {
   font-size: 18px;
 }
 
-.btn-more__wrapper {
-  margin: 30px auto;
+.detail-page {
+  text-align: left;
 }
 
-.btn-more {
-  border-radius: 4px;
-  font-size: 16px;
-  padding: 15px 45px;
-  background-color: var(--color-white);
-  color: var(--color-black);
-  border: none;
-  border: solid 2px var(--color-black);
+.detail-content {
+  padding: 30px 0;
+  font-size: 18px;
 }
 
-.btn-more:hover {
-  cursor: pointer;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  transition-duration: 0.5s;
+.detail-content .id {
+}
+
+.detail-content .name {
+  font-size: 32px;
 }
 
 .grid-item__skeleton {

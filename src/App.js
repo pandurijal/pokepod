@@ -20,9 +20,9 @@ class App extends Component {
               <Link to="/">
                 <p className={`app-menu`}>Home</p>
               </Link>
-              <Link to="/fav">
+              {/* <Link to="/fav">
                 <p className={`app-menu`}>Fav</p>
-              </Link>
+              </Link> */}
             </NavBar>
             <Switch>
               {routes.map(route => (

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pokepod/static/css/main.af2e438b.chunk.css",
-    "main.js": "/pokepod/static/js/main.ddae5f20.chunk.js",
-    "main.js.map": "/pokepod/static/js/main.ddae5f20.chunk.js.map",
+    "main.css": "/pokepod/static/css/main.e683f5a3.chunk.css",
+    "main.js": "/pokepod/static/js/main.277a54ee.chunk.js",
+    "main.js.map": "/pokepod/static/js/main.277a54ee.chunk.js.map",
     "runtime~main.js": "/pokepod/static/js/runtime~main.63be5864.js",
     "runtime~main.js.map": "/pokepod/static/js/runtime~main.63be5864.js.map",
     "static/js/2.b799a951.chunk.js": "/pokepod/static/js/2.b799a951.chunk.js",
     "static/js/2.b799a951.chunk.js.map": "/pokepod/static/js/2.b799a951.chunk.js.map",
     "index.html": "/pokepod/index.html",
-    "precache-manifest.46b275872bee63fcacbdc507ade5f6c4.js": "/pokepod/precache-manifest.46b275872bee63fcacbdc507ade5f6c4.js",
+    "precache-manifest.5a62d4b8bfe116ae474b5f089a5cbefe.js": "/pokepod/precache-manifest.5a62d4b8bfe116ae474b5f089a5cbefe.js",
     "service-worker.js": "/pokepod/service-worker.js",
-    "static/css/main.af2e438b.chunk.css.map": "/pokepod/static/css/main.af2e438b.chunk.css.map"
+    "static/css/main.e683f5a3.chunk.css.map": "/pokepod/static/css/main.e683f5a3.chunk.css.map"
   }
 }

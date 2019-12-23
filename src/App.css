@@ -230,6 +230,29 @@ table td {
   font-size: 32px;
 }
 
+.grid-item-detail-left__skeleton,
+.grid-item-detail-right__skeleton {
+  background-color: var(--color-gray);
+  position: relative;
+  flex-basis: 20%;
+  -ms-flex: auto;
+  padding: 10px;
+  border: solid 5px #ffffff;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.grid-item-detail-left__skeleton {
+  flex-basis: 33.33%;
+  height: 250px;
+}
+
+.grid-item-detail-right__skeleton {
+  flex-basis: 66.66%;
+  height: 50px;
+}
+
 .grid-item__skeleton {
   background-color: var(--color-gray);
   height: 180px;
@@ -244,7 +267,9 @@ table td {
   border-radius: 8px;
 }
 
-.grid-item__skeleton::after {
+.grid-item__skeleton::after,
+.grid-item-detail-left__skeleton::after,
+.grid-item-detail-right__skeleton::after {
   opacity: 0.2;
   content: '';
   position: absolute;
